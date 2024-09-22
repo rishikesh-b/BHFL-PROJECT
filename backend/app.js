@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 app.use(cors({
-  origin: "bhfl-project-client.vercel.app",
+  origin: "https://bhfl-project-client.vercel.app",
   methos: ["GET", "POST" , "PUT" , "DELETE" , "PATCH"], 
   credentials : true
 
