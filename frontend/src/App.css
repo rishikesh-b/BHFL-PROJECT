@@ -1,0 +1,203 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c77363, #dc3333);
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+/* App Container with Enhanced Glassmorphism */
+.App {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #32d069;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* JSON Input */
+.json-input {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(113, 17, 17, 0.25);
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s, background-color 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+.json-input:focus {
+  border-color: #ff7a33;
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+  box-shadow: 0 0 5px rgba(27, 203, 42, 0.5);
+}
+
+/* Button */
+button {
+  padding: 12px 30px;
+  background: rgba(34, 213, 18, 0.8);
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(255, 204, 51, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 204, 51, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: rgba(204, 204, 204, 0.5);
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4d4d;
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Section */
+.dropdown-section {
+  margin-top: 25px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #45e022;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+select:focus {
+  border-color: #ffcc33;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px rgba(255, 204, 51, 0.5);
+}
+
+/* Response Section */
+.response-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+strong {
+  color: #ffcc33;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Animated Header */
+.App-header {
+  background: rgba(255, 255, 255, 0.15);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  padding: 50px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.App-link {
+  color: #ffcc33;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.App-link:hover {
+  color: #fff7b2;
+  text-shadow: 0 0 5px rgba(255, 204, 51, 0.8);
+}
+
+/* App Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
